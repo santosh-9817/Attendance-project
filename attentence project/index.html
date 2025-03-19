@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> STUDENT ATTENDANCE FORM</h1>
+        <p>Select the attendance status (P for Present, A for Absent) for each student:</p>
+
+        <div class="attendance-form">
+            <label for="student1">Student 1:</label>
+            <select id="student1">
+                <option value="P">Present</option>
+                <option value="A">Absent</option>
+            </select><br>
+
+            <label for="student2">Student 2:</label>
+            <select id="student2">
+                <option value="P">Present</option>
+                <option value="A">Absent</option>
+            </select><br>
+
+            <label for="student3">Student 3:</label>
+            <select id="student3">
+                <option value="P">Present</option>
+                <option value="A">Absent</option>
+            </select><br>
+
+            <label for="student4">Student 4:</label>
+            <select id="student4">
+                <option value="P">Present</option>
+                <option value="A">Absent</option>
+            </select><br>
+
+            <button onclick="generateAttendance()">Submit Attendance</button>
+        </div>
+
+        <div id="attendanceResult">
+            <h2>Attendance Summary:</h2>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
